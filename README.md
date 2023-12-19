@@ -1,4 +1,4 @@
-# GitHub Actions Fundamentals
+# GitHub Actions Fundamentals 231219
 
 Repo for the `GitHub Actions Fundamentals` training.
 
