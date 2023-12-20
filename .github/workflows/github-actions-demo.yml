@@ -32,6 +32,7 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch'
+    needs: Build
     environment: Test
     steps:
      - run: |
@@ -40,6 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch'
     environment: Load-Test
+    needs: Build
     steps:
      - run: |
          echo "Testing...."
