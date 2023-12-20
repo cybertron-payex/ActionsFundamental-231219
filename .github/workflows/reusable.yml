@@ -18,9 +18,9 @@ jobs:
      - name: Say hello
        run: |
         echo "Hello ${{ inputs.who-to-greet }}"
-    - name: Current time
-      id: time
-      run: |
+     - name: Current time
+       id: time
+       run: |
         echo "currenttime=$(date)" >> $GITHUB_OUTPUT
     outputs: 
        current-time: ${{ steps.time.outputs.currenttime }}
